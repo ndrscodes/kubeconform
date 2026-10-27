@@ -7,7 +7,7 @@ COPY openapi2jsonschema-go/vendor ./vendor
 COPY openapi2jsonschema-go/openapi2jsonschema.go openapi2jsonschema-go/openapi2jsonschema_test.go ./
 RUN go build -mod=vendor -o /openapi2jsonschema .
 
-FROM alpine:3.20
+FROM alpine:3.24
 RUN apk --no-cache add bats diffutils
 COPY --from=build /openapi2jsonschema /code/openapi2jsonschema-go/openapi2jsonschema
 COPY scripts/fixtures /code/fixtures
