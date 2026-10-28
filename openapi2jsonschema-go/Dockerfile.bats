@@ -1,6 +1,6 @@
 # Build context must be the repo root so that scripts/fixtures/ is reachable.
 # See the Makefile in this folder.
-FROM golang:1.26-alpine AS build
+FROM golang:1.27-alpine AS build
 WORKDIR /src
 COPY openapi2jsonschema-go/go.mod openapi2jsonschema-go/go.sum ./
 COPY openapi2jsonschema-go/vendor ./vendor
