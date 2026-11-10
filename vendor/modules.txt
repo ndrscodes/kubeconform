@@ -25,7 +25,7 @@ golang.org/x/text/internal/tag
 golang.org/x/text/language
 golang.org/x/text/message
 golang.org/x/text/message/catalog
-# k8s.io/kube-openapi v0.0.0-20261014044854-ca3452a79603
+# k8s.io/kube-openapi v0.0.0-20261104182252-5bee61fc5225
 ## explicit; go 1.27.0
 k8s.io/kube-openapi/pkg/internal/third_party/govalidator
 k8s.io/kube-openapi/pkg/validation/errors
